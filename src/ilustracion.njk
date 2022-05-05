@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: Ilustracion
+eleventyNavigation:
+  key: ilustracion
+  title: Ilustración
+  order: 2
+
+---
+
+<div class="col-12">
+ {% set elemento ={"imagen": "ilu1.jpg"} %}
+ {% include 'components/ilus.njk' %}
+
+  <p>
+    La página de ilustraciones.
+  </p>
+
+{% for elemento in ilus %}
+     {% include 'components/ilus.njk' %}
+{% endfor %}
+</div>
